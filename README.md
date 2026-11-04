@@ -37,7 +37,7 @@ and commit the changed `.html` files. Styles are in `assets/site.css`.
    - `A` records for `highmarchgames.com` (host empty) to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `CNAME` record `www` to `<your-github-user>.github.io`
 4. Back in **Settings -> Pages**, wait for the DNS check, then tick **Enforce HTTPS**.
-5. **E-mail:** Porkbun -> Email Forwarding: forward `contact@highmarchgames.com` to your own mailbox.
+5. **E-mail:** the public address is `yaniv@highmarchgames.com` (Porkbun Email Forwarding to the owner's mailbox, already set up). It is set as `EMAIL` in `build.py`.
 
 Check the current values in GitHub's documentation ("Managing a custom domain for your GitHub Pages site") before entering them.
 

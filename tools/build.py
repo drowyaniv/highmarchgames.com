@@ -10,7 +10,7 @@ import html
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://highmarchgames.com"
-EMAIL = "contact@highmarchgames.com"
+EMAIL = "yaniv@highmarchgames.com"
 YEAR = 2026
 UPDATES_MAIL = f"mailto:{EMAIL}?subject=Keep%20me%20posted&body=Please%20let%20me%20know%20when%20there%20is%20news."
 
@@ -64,7 +64,7 @@ def page(path, title, description, body, *, active=None, og_image="assets/img/ne
   <div class="wrap">
     <img src="{r}assets/img/studio/highmarch_logo_horizontal_on_dark.svg" alt="" width="455" height="192">
     <nav aria-label="Footer"><a href="{r}games/nexus-of-dragons/">Nexus of Dragons</a><a href="{r}press/">Press kit</a><a href="{r}about/">About</a><a href="mailto:{EMAIL}">{EMAIL}</a></nav>
-    <div>&copy; {YEAR} Highmarch Games. All rights reserved.</div>
+    <div>&copy; {YEAR} Highmarch Games. All rights reserved. Highmarch&trade; and the Highmarch logo are trademarks of Highmarch Games.</div>
   </div>
 </footer>
 </body>
