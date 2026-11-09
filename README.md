@@ -43,5 +43,5 @@ Check the current values in GitHub's documentation ("Managing a custom domain fo
 
 ## Fonts and art
 
-- Pirata One (headings) - SIL Open Font License, `assets/fonts/OFL-PirataOne.txt`.
+- IM Fell English SC (headings) - SIL Open Font License, `assets/fonts/OFL-IMFellEnglishSC.txt`.
 - Game art and screenshots are from Nexus of Dragons (see `Docs/AI_CONTENT_REGISTER.md` in the game project).

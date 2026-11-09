@@ -1,5 +1,5 @@
 /* Highmarch Games - studio site. Plain CSS, no build step. */
-@font-face { font-family: "Pirata One"; src: url("fonts/PirataOne-Regular.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "IM Fell English SC"; src: url("fonts/IMFellEnglishSC-Regular.woff2") format("woff2"); font-display: swap; }
 
 :root {
   --bg: #121014;
@@ -12,7 +12,7 @@
   --gold-hi: #f0d48a;
   --wine: #7a1f2b;
   --wine-hi: #a3283a;
-  --display: "Pirata One", "Palatino Linotype", Georgia, serif;
+  --display: "IM Fell English SC", "Palatino Linotype", Georgia, serif;
   --body: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   --ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --wrap: 1120px;

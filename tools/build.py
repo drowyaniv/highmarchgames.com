@@ -12,7 +12,6 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://highmarchgames.com"
 EMAIL = "yaniv@highmarchgames.com"
 YEAR = 2026
-UPDATES_MAIL = f"mailto:{EMAIL}?subject=Keep%20me%20posted&body=Please%20let%20me%20know%20when%20there%20is%20news."
 
 NAV = [("Games", "games/"), ("Press", "press/"), ("About", "about/")]
 
@@ -46,14 +45,14 @@ def page(path, title, description, body, *, active=None, og_image="assets/img/ne
 <link rel="icon" href="{r}favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="{r}apple-touch-icon.png">
 <link rel="manifest" href="{r}site.webmanifest">
-<link rel="preload" href="{r}assets/fonts/PirataOne-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{r}assets/fonts/IMFellEnglishSC-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{r}assets/site.css">
 {extra_head}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{r or './'}" aria-label="Highmarch Games - home"><img src="{r}assets/img/studio/highmarch_logo_horizontal_on_dark.svg" alt="Highmarch Games" width="455" height="192"></a>
+    <a class="brand" href="{r or './'}" aria-label="Highmarch Games – home"><img src="{r}assets/img/studio/highmarch_logo_horizontal_on_dark.svg" alt="Highmarch Games" width="455" height="192"></a>
     <nav class="nav" aria-label="Main">{nav}</nav>
   </div>
 </header>
@@ -80,25 +79,13 @@ def page(path, title, description, body, *, active=None, og_image="assets/img/ne
 GAME_SHORT = ("A fantasy adventure board game for one to six players. Choose a hero, journey inward across three "
               "rings of a painted land, and face the Shadow Dragon at the heart of the Nexus.")
 
-UPDATES = f"""<section id="updates">
-  <div class="wrap">
-    <div class="callout">
-      <div>
-        <p class="eyebrow">News &amp; updates</p>
-        <h2 class="mt0">Hear it first</h2>
-        <p class="muted mt0">Our newsletter is on its way. Until it opens, send us a note and we will tell you
-        when there is news about Nexus of Dragons - nothing else, and only now and then.</p>
-      </div>
-      <div class="btns"><a class="btn primary" href="{UPDATES_MAIL}">Keep me posted</a></div>
-    </div>
-  </div>
-</section>"""
+
 
 GAME_CARD = """<a class="feature-game" href="{r}games/nexus-of-dragons/">
   <img class="bg" src="{r}assets/img/nexus/keyart-1920.webp" srcset="{r}assets/img/nexus/keyart-960.webp 960w, {r}assets/img/nexus/keyart-1920.webp 1920w" sizes="(max-width: 1120px) 100vw, 1120px" alt="" width="1920" height="1072" loading="lazy">
   <div class="inner">
     <img class="game-logo" src="{r}assets/img/nexus/nexus-logo-994.webp" alt="Nexus of Dragons" width="994" height="416" loading="lazy">
-    <div><span class="tag">In development</span><span class="tag">PC</span><span class="tag">1-6 players</span></div>
+    <div><span class="tag">In development</span><span class="tag">PC</span><span class="tag">1–6 players</span></div>
     <p>""" + GAME_SHORT + """</p>
     <span class="btn">Explore the game &rarr;</span>
   </div>
@@ -108,24 +95,24 @@ GAME_CARD = """<a class="feature-game" href="{r}games/nexus-of-dragons/">
 built = []
 
 built.append(page("index.html", "Highmarch Games",
-    "Highmarch Games is an independent studio making fantasy games. Our first game, Nexus of Dragons, is in development.",
+    "Highmarch Games is an independent game studio. Its first game, Nexus of Dragons, a fantasy adventure board game for PC, is in development.",
     """<section class="studio-hero">
   <div class="wrap">
     <img class="emblem" src="{r}assets/img/studio/highmarch_logo_emblem.svg" alt="" width="164" height="192">
     <p class="eyebrow">Independent game studio</p>
     <h1>Worlds worth the journey</h1>
-    <p class="lede">Highmarch Games makes fantasy games about the road and what waits at the end of it -
-    painted lands, hard choices and heroes with stories of their own.</p>
-    <div class="btns"><a class="btn primary" href="{r}games/nexus-of-dragons/">Nexus of Dragons</a><a class="btn" href="#updates">Get updates</a></div>
+    <p class="lede">Highmarch Games is an independent studio. Different worlds, one promise: games worth coming back to –
+    each with its own rules, its own story, and evenings you look up from hours later.</p>
+    <div class="btns"><a class="btn primary" href="{r}games/nexus-of-dragons/">Nexus of Dragons</a></div>
   </div>
 </section>
 <section>
   <div class="wrap">
-    <p class="eyebrow">Our first game</p>
+    <p class="eyebrow">My first game</p>
     """ + GAME_CARD + """
   </div>
 </section>
-""" + UPDATES))
+"""))
 
 built.append(page("games/index.html", "Games",
     "Games by Highmarch Games: Nexus of Dragons, a fantasy adventure board game in development for PC.",
@@ -140,11 +127,11 @@ built.append(page("games/index.html", "Games",
     </div>
   </div>
 </section>
-""" + UPDATES, active="Games"))
+""", active="Games"))
 
 SHOTS = [
     ("board", "The painted board: three rings of lands around the Nexus Temple."),
-    ("hero", "Every step is a choice - where to go, and what waits there."),
+    ("hero", "Every step is a choice – where to go, and what waits there."),
     ("lieutenant", "The Shadow Dragon's lieutenants roam the land."),
     ("dragon", "At the heart of the Nexus waits the Shadow Dragon."),
     ("town", "Towns to rest, trade, train and take on contracts."),
@@ -159,15 +146,15 @@ HEROES = ["warrior_gareth_m", "mage_eldrin_f", "priest_corvin_f", "rogue_varis_f
 heroes = "".join(f'<img src="{{r}}assets/img/nexus/heroes/{h}.webp" alt="" width="200" height="300" loading="lazy">' for h in HEROES)
 
 FEATURES = [
-    ("Journey to the heart", "Three rings of land - the Outer, the Middle and the Inner - each harder than the last. "
+    ("Journey to the heart", "Three rings of land – the Outer, the Middle and the Inner – each harder than the last. "
      "Find the crossings, earn your way inward and reach the Nexus Temple."),
     ("Ninety heroes", "Nine peoples and five callings: warriors, mages, clerics, rogues and rangers, each hero with a story "
      "and a personal quest of their own. Or make your own hero."),
     ("Dice on the table", "Every blow, spell and saving throw is rolled out in front of you, from the d4 to the d20. "
      "Classic tabletop rules decide every fight."),
     ("Towns and the road", "Rest at inns, trade in markets, buy a mount at the stables, hire companions in taverns, "
-     "take guild contracts - and perhaps raise a dragon of your own."),
-    ("The Shadow Dragon's lieutenants", "Four of the dragon's servants walk the land. Beat them for their treasures - "
+     "take guild contracts – and perhaps raise a dragon of your own."),
+    ("The Shadow Dragon's lieutenants", "Four of the dragon's servants walk the land. Beat them for their treasures – "
      "or run when you must."),
     ("Your table, your length", "Up to six players in any mix of friends at one screen and computer heroes. "
      "Play a Classic match for the long road or a Quick one for an evening."),
@@ -199,9 +186,9 @@ built.append(page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
   <div class="wrap">
     <h1 class="skip">Nexus of Dragons</h1>
     <img class="game-logo" src="{r}assets/img/nexus/nexus-logo-994.webp" alt="Nexus of Dragons" width="994" height="416">
-    <div><span class="tag">In development</span><span class="tag">PC (Windows)</span><span class="tag">1-6 players</span></div>
+    <div><span class="tag">In development</span><span class="tag">PC (Windows)</span><span class="tag">1–6 players</span></div>
     <p class="lede">""" + GAME_SHORT + """</p>
-    <div class="btns"><a class="btn primary" href="#updates">Get updates</a><a class="btn" href="#screens">Screenshots</a></div>
+    <div class="btns"><a class="btn primary" href="#screens">Screenshots</a></div>
   </div>
 </div>
 <section>
@@ -213,7 +200,7 @@ built.append(page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
       <p>Nexus of Dragons is played on a painted board of three rings. Each turn you roll, choose your road and face
       what you find there: a monster to fight, a stranger with an offer, a town to rest in, a gate that will only open
       for the strong.</p>
-      <p>Your hero grows with every step - levels, spells, gear, a horse, a few loyal companions. The other heroes on the
+      <p>Your hero grows with every step – levels, spells, gear, a horse, a few loyal companions. The other heroes on the
       board are racing you to the same prize. Only one of you will take mastery of the Nexus Crystal.</p>
     </div>
     <div class="card"><img src="{r}assets/img/nexus/shots/board-800.webp" alt="The board of Nexus of Dragons, seen from above" width="800" height="343" loading="lazy">
@@ -253,7 +240,7 @@ built.append(page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
     <div class="heroes">""" + heroes + """</div>
   </div>
 </section>
-""" + UPDATES + LIGHTBOX_JS, active="Games"))
+""" + LIGHTBOX_JS, active="Games"))
 
 PRESS_FILES = [
     # (file in press/, title, size note, thumb, thumb class)
@@ -278,7 +265,7 @@ built.append(page("press/index.html", "Press kit",
         <tr><th>Game</th><td>Nexus of Dragons</td></tr>
         <tr><th>Developer &amp; publisher</th><td>Highmarch Games</td></tr>
         <tr><th>Genre</th><td>Fantasy adventure board game</td></tr>
-        <tr><th>Players</th><td>1-6, local (one screen); any mix of people and computer heroes</td></tr>
+        <tr><th>Players</th><td>1–6, local (one screen); any mix of people and computer heroes</td></tr>
         <tr><th>Platform</th><td>PC (Windows)</td></tr>
         <tr><th>Release date</th><td>To be announced</td></tr>
         <tr><th>Price</th><td>To be announced</td></tr>
@@ -291,7 +278,7 @@ built.append(page("press/index.html", "Press kit",
       <h2>Description</h2>
       <p><b>Short:</b> """ + GAME_SHORT + """</p>
       <p><b>Long:</b> Nexus of Dragons is a fantasy adventure board game for one to six players, in development for PC.
-      Players choose from ninety heroes - nine peoples, five classes, each with a story and a personal quest - and journey
+      Players choose from ninety heroes – nine peoples, five classes, each with a story and a personal quest – and journey
       inward across three rings of a painted land. Along the way they fight monsters with dice on the table, rest and
       trade in towns, buy mounts, hire companions and take on contracts, while four lieutenants of the Shadow Dragon roam
       the board. The first hero to reach the Nexus Temple, defeat the Shadow Dragon and take mastery of the Nexus Crystal
@@ -308,7 +295,7 @@ built.append(page("press/index.html", "Press kit",
 <section id="screens" class="band">
   <div class="wrap">
     <h2>Screenshots</h2>
-    <p class="muted">Click an image for the full-size file. Work in progress - everything shown may change before release.</p>
+    <p class="muted">Click an image for the full-size file. Work in progress – everything shown may change before release.</p>
     <div class="downloads">""" + "\n".join(
         f'<a href="screens/{k}.jpg" download><div class="thumb"><img class="cover" src="{{r}}assets/img/nexus/shots/{k}-800.webp" alt="{html.escape(c)}" loading="lazy"></div>'
         f'<div class="meta"><b>{html.escape(c)}</b><span>JPG</span></div></a>' for k, c in SHOTS) + """</div>
@@ -320,10 +307,10 @@ built.append(page("press/index.html", "Press kit",
     <div class="downloads">
       <a href="art/nexus-of-dragons-logo.png" download><div class="thumb"><img src="{r}assets/img/nexus/nexus-logo-994.webp" alt="Nexus of Dragons logo" loading="lazy"></div><div class="meta"><b>Game logo</b><span>PNG, transparent</span></div></a>
       <a href="art/nexus-of-dragons-icon.png" download><div class="thumb"><img src="{r}assets/img/nexus/nexus-icon-256.webp" alt="Nexus of Dragons icon" loading="lazy"></div><div class="meta"><b>Game icon</b><span>PNG, 1024 x 1024</span></div></a>
-      <a href="art/nexus-of-dragons-key-art.jpg" download><div class="thumb"><img class="cover" src="{r}assets/img/nexus/keyart-960.webp" alt="Key art" loading="lazy"></div><div class="meta"><b>Key art - dusk</b><span>JPG, 1920 x 1072</span></div></a>
-      <a href="art/nexus-of-dragons-key-art-night.jpg" download><div class="thumb"><img class="cover" src="{r}assets/img/nexus/keyart-night-960.webp" alt="Key art at night" loading="lazy"></div><div class="meta"><b>Key art - night</b><span>JPG, 1920 x 1072</span></div></a>
-      <a href="art/highmarch-games-logo-dark.png" download><div class="thumb"><img src="{r}assets/img/studio/highmarch_logo_horizontal_on_dark.svg" alt="Highmarch Games logo for dark backgrounds" loading="lazy"></div><div class="meta"><b>Studio logo - dark backgrounds</b><span>PNG, transparent (SVG in the ZIP)</span></div></a>
-      <a href="art/highmarch-games-logo-light.png" download><div class="thumb light"><img src="{r}assets/img/studio/highmarch_logo_horizontal_on_light.svg" alt="Highmarch Games logo for light backgrounds" loading="lazy"></div><div class="meta"><b>Studio logo - light backgrounds</b><span>PNG, transparent (SVG in the ZIP)</span></div></a>
+      <a href="art/nexus-of-dragons-key-art.jpg" download><div class="thumb"><img class="cover" src="{r}assets/img/nexus/keyart-960.webp" alt="Key art" loading="lazy"></div><div class="meta"><b>Key art – dusk</b><span>JPG, 1920 x 1072</span></div></a>
+      <a href="art/nexus-of-dragons-key-art-night.jpg" download><div class="thumb"><img class="cover" src="{r}assets/img/nexus/keyart-night-960.webp" alt="Key art at night" loading="lazy"></div><div class="meta"><b>Key art – night</b><span>JPG, 1920 x 1072</span></div></a>
+      <a href="art/highmarch-games-logo-dark.png" download><div class="thumb"><img src="{r}assets/img/studio/highmarch_logo_horizontal_on_dark.svg" alt="Highmarch Games logo for dark backgrounds" loading="lazy"></div><div class="meta"><b>Studio logo – dark backgrounds</b><span>PNG, transparent (SVG in the ZIP)</span></div></a>
+      <a href="art/highmarch-games-logo-light.png" download><div class="thumb light"><img src="{r}assets/img/studio/highmarch_logo_horizontal_on_light.svg" alt="Highmarch Games logo for light backgrounds" loading="lazy"></div><div class="meta"><b>Studio logo – light backgrounds</b><span>PNG, transparent (SVG in the ZIP)</span></div></a>
     </div>
   </div>
 </section>
@@ -343,7 +330,7 @@ built.append(page("about/index.html", "About",
       <p class="eyebrow">About</p>
       <h1>Highmarch Games</h1>
       <hr class="rule">
-      <p class="lede">An independent studio making fantasy games - the kind you sit down to for an evening and look up
+      <p class="lede">An independent studio making fantasy games – the kind you sit down to for an evening and look up
       from hours later.</p>
       <p>We care about worlds that feel painted rather than generated in bulk, rules that are easy to learn and hard to
       master, and heroes who are more than a set of numbers. Our first game, <a href="{r}games/nexus-of-dragons/">Nexus of Dragons</a>,
@@ -351,13 +338,13 @@ built.append(page("about/index.html", "About",
     </div>
     <div class="card" id="contact"><div class="body">
       <h2 class="mt0">Contact</h2>
-      <p>Questions, press, or just a hello - write to us at</p>
+      <p>Questions, press, or just a hello – write to us at</p>
       <p><a class="btn" href="mailto:""" + EMAIL + """">""" + EMAIL + """</a></p>
       <p class="muted" style="margin:0">Press can find screenshots, logos and the fact sheet in the <a href="{r}press/">press kit</a>.</p>
     </div></div>
   </div>
 </section>
-""" + UPDATES, active="About"))
+""", active="About"))
 
 # 404 - GitHub Pages serves /404.html for missing pages at any depth, so its links are absolute.
 built.append(page("404.html", "Page not found", "This page does not exist.",
@@ -365,7 +352,7 @@ built.append(page("404.html", "Page not found", "This page does not exist.",
   <div class="wrap">
     <img class="emblem" src="/assets/img/studio/highmarch_logo_emblem.svg" alt="" width="164" height="192">
     <h1>The road ends here</h1>
-    <p class="lede">This page does not exist - or it has wandered off the map.</p>
+    <p class="lede">This page does not exist – or it has wandered off the map.</p>
     <div class="btns"><a class="btn primary" href="/">Back to the start</a></div>
   </div>
 </section>"""))
