@@ -87,11 +87,6 @@ a.feature-game:hover > img.bg { transform: scale(1.03); }
 .card .body { padding: 22px 24px 26px; }
 .card.placeholder { display: grid; place-items: center; text-align: center; min-height: 260px; border-style: dashed; color: var(--muted); padding: 24px; }
 
-/* Newsletter / contact block */
-.callout { background: linear-gradient(135deg, #261a1f, #1a1518); border: 1px solid var(--line); border-radius: 8px; padding: clamp(28px, 5vw, 52px); display: grid; gap: 8px 40px; grid-template-columns: 1.4fr 1fr; align-items: center; }
-.callout .btns { margin-top: 0; justify-content: flex-end; }
-@media (max-width: 760px) { .callout { grid-template-columns: 1fr; } .callout .btns { justify-content: flex-start; margin-top: 12px; } }
-
 /* Game page */
 .game-hero { position: relative; min-height: min(88vh, 760px); display: grid; align-items: center; isolation: isolate; border-bottom: 1px solid var(--line); }
 .game-hero picture, .game-hero picture img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% 50%; z-index: -2; }
@@ -153,7 +148,6 @@ dialog.lightbox .close { display: block; margin: 0 0 8px auto; font: 600 14px/1 
 .site-footer a { color: var(--muted); text-decoration: none; }
 .site-footer a:hover { color: var(--text); }
 
-.center { text-align: center; }
 .mt0 { margin-top: 0; }
 
 @media (max-width: 560px) {
