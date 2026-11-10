@@ -16,17 +16,15 @@ No build step is needed on the server: GitHub Pages serves the files as they are
 
 ## Editing
 
-The pages share one header and footer, so they are written by `tools/build.py`.
-Edit the text in that file, then run:
+The pages share one header and footer, so they are generated. Page texts are in `tools/sitegen/pages/`
+(one file per page); the structure is described in `Docs/ARCHITECTURE.md`. After a change run:
 
 ```
 python tools/build.py
+python -m unittest discover -s tests
 ```
 
-and commit the changed `.html` files. Styles are in `assets/site.css`.
-
-- A new game: add a page in `build.py` (copy the Nexus of Dragons one), its images under `assets/img/<game>/`, and a card on `games/`.
-- The newsletter: the "Keep me posted" buttons send an e-mail for now (`UPDATES_MAIL` in `build.py`). When a newsletter service is chosen, replace that block with its sign-up form.
+and commit the changed source together with the regenerated `.html` files. Styles are in `assets/site.css`.
 
 ## Hosting (GitHub Pages + Porkbun)
 
@@ -37,7 +35,7 @@ and commit the changed `.html` files. Styles are in `assets/site.css`.
    - `A` records for `highmarchgames.com` (host empty) to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `CNAME` record `www` to `<your-github-user>.github.io`
 4. Back in **Settings -> Pages**, wait for the DNS check, then tick **Enforce HTTPS**.
-5. **E-mail:** the public address is `yaniv@highmarchgames.com` (Porkbun Email Forwarding to the owner's mailbox, already set up). It is set as `EMAIL` in `build.py`.
+5. **E-mail:** the public address is `yaniv@highmarchgames.com` (Porkbun Email Forwarding to the owner's mailbox, already set up). It is set as `EMAIL` in `tools/sitegen/config.py`.
 
 Check the current values in GitHub's documentation ("Managing a custom domain for your GitHub Pages site") before entering them.
 
