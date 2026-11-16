@@ -1,8 +1,8 @@
 """Nexus of Dragons: the texts and image lists used on the home, games, game and press pages."""
 import html
 
-GAME_SHORT = ("A fantasy adventure board game for one to six players. Choose a hero, journey inward across three "
-              "rings of a painted land, and face the Shadow Dragon at the heart of the Nexus.")
+GAME_SHORT = ("A fantasy adventure board game for one to six players. Cross Thandrys, fight and grow stronger on "
+              "every road, and be the one who defeats the dragon and claims the Crystal.")
 
 GAME_CARD = """<a class="feature-game" href="{r}games/nexus-of-dragons/">
   <img class="bg" src="{r}assets/img/nexus/keyart-1920.webp" srcset="{r}assets/img/nexus/keyart-960.webp 960w, {r}assets/img/nexus/keyart-1920.webp 1920w" sizes="(max-width: 1120px) 100vw, 1120px" alt="" width="1920" height="1072" loading="lazy">

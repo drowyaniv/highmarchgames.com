@@ -10,7 +10,7 @@ PAGE = Page("index.html", "Highmarch Games",
     <p class="eyebrow">Independent game studio</p>
     <h1>Worlds worth the journey</h1>
     <p class="lede">Highmarch Games is an independent studio. Different worlds, one promise: games worth coming back to –
-    each with its own rules, its own story, and evenings you look up from hours later.</p>
+    each with its own rules and its own story.</p>
     <div class="btns"><a class="btn primary" href="{r}games/nexus-of-dragons/">Nexus of Dragons</a></div>
   </div>
 </section>
