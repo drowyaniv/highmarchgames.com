@@ -6,7 +6,6 @@ PAGE = Page("games/index.html", "Games",
     "Games by Highmarch Games: Nexus of Dragons, a fantasy adventure board game in development for PC.",
     """<section>
   <div class="wrap">
-    <p class="eyebrow">Games</p>
     <h1>My games</h1>
     <hr class="rule">
     """ + GAME_CARD + """
