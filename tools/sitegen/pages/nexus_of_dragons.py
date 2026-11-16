@@ -30,7 +30,7 @@ PAGE = Page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
       <p>Your hero grows with every step – levels, spells, gear, a horse, a few loyal companions. The other heroes on the
       board are racing you to the same prize. Only one of you will take mastery of the Nexus Crystal.</p>
     </div>
-    <div class="card"><img src="{r}assets/img/nexus/shots/board-800.webp" alt="The board of Nexus of Dragons, seen from above" width="800" height="343" loading="lazy">
+    <div class="card"><img src="{r}assets/img/nexus/shots/table-800.webp" alt="The board of Nexus of Dragons on the table, seen from above" width="800" height="450" loading="lazy">
       <div class="body"><p class="mt0 muted" style="margin:0">To win, reach the Nexus Temple, defeat the Shadow Dragon and take mastery of the Crystal.</p></div></div>
   </div>
 </section>

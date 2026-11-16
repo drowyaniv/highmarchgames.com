@@ -105,11 +105,11 @@ a.feature-game:hover > img.bg { transform: scale(1.03); }
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; margin-top: 28px; }
 .gallery button { all: unset; cursor: zoom-in; display: block; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); background: #000; }
 .gallery button:focus-visible { outline: 2px solid var(--gold-hi); outline-offset: 3px; }
-.gallery img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; transition: transform .4s ease, opacity .3s; }
+.gallery img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; transition: transform .4s ease, opacity .3s; }
 .gallery button:hover img { transform: scale(1.03); }
 .note { font: 14px/1.5 var(--ui); color: var(--muted); margin-top: 14px; }
 
-dialog.lightbox { border: 0; padding: 0; background: transparent; max-width: min(96vw, 1600px); width: 100%; color: var(--text); }
+dialog.lightbox { border: 0; padding: 0; background: transparent; max-width: min(96vw, 1400px); width: 100%; color: var(--text); }
 dialog.lightbox::backdrop { background: rgba(6,5,8,.92); }
 dialog.lightbox img { width: 100%; height: auto; border-radius: 4px; }
 dialog.lightbox p { font: 15px/1.5 var(--ui); text-align: center; margin: 12px 0 0; color: #d6ccbf; }

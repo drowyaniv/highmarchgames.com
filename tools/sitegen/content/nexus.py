@@ -15,16 +15,19 @@ GAME_CARD = """<a class="feature-game" href="{r}games/nexus-of-dragons/">
 </a>"""
 
 SHOTS = [
-    ("board", "The painted board: three rings of lands around the Nexus Temple."),
-    ("hero", "Every step is a choice – where to go, and what waits there."),
-    ("lieutenant", "The Shadow Dragon's lieutenants roam the land."),
-    ("dragon", "At the heart of the Nexus waits the Shadow Dragon."),
-    ("town", "Towns to rest, trade, train and take on contracts."),
-    ("tavern", "Taverns along the road, and companions to hire in them."),
+    ("table", "The table: a painted board of three rings, with the decks and the gold beside it."),
+    ("lieutenant", "One of the Shadow Dragon's lieutenants stands in a hero's way."),
+    ("fight", "A fight with a manticore: keep the roll, or spend Luck on a second throw."),
+    ("town", "Highcrest, the fortress-city every road eventually leads back to."),
+    ("heroes", "Ninety heroes to choose from – or make your own."),
+    ("market", "Weapons, armour and potions in Highcrest's marketplace."),
+    ("hero-card", "Every hero comes with a story and a personal quest of their own."),
+    ("dice-move", "Roll the d6 and choose your road."),
+    ("dice-attack", "Every attack is a d20 thrown on the table."),
 ]
 GALLERY_HTML = "\n".join(
-    f'<button type="button" data-full="{{r}}assets/img/nexus/shots/{k}-1600.webp" data-caption="{html.escape(c)}">'
-    f'<img src="{{r}}assets/img/nexus/shots/{k}-800.webp" alt="{html.escape(c)}" width="800" height="343" loading="lazy"></button>'
+    f'<button type="button" data-full="{{r}}assets/img/nexus/shots/{k}-1400.webp" data-caption="{html.escape(c)}">'
+    f'<img src="{{r}}assets/img/nexus/shots/{k}-800.webp" alt="{html.escape(c)}" width="800" height="450" loading="lazy"></button>'
     for k, c in SHOTS)
 HEROES = ["warrior_gareth_m", "mage_eldrin_f", "priest_corvin_f", "rogue_varis_f", "ranger_fenn_m", "hilldwarf_warrior_f",
           "dragonborn_mage_m", "tiefling_ranger_f", "highelf_cleric_m", "halforc_rogue_f", "lightfoothalfling_ranger_m", "rockgnome_mage_f"]
