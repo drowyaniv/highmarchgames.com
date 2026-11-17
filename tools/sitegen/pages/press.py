@@ -26,6 +26,7 @@ PAGE = Page("press/index.html", "Press kit",
         <tr><th>Genre</th><td>Fantasy adventure board game</td></tr>
         <tr><th>Players</th><td>1–6, local (one screen); any mix of people and computer heroes</td></tr>
         <tr><th>Platform</th><td>PC (Windows)</td></tr>
+        <tr><th>Engine</th><td>Unreal Engine 5</td></tr>
         <tr><th>Release date</th><td>To be announced</td></tr>
         <tr><th>Price</th><td>To be announced</td></tr>
         <tr><th>Language</th><td>English</td></tr>
@@ -76,7 +77,7 @@ PAGE = Page("press/index.html", "Press kit",
 <section id="studio" class="band">
   <div class="wrap">
     <h2>About Highmarch Games</h2>
-    <p class="lede">Highmarch Games is an independent studio making fantasy games. Nexus of Dragons is its first game.
+    <p class="lede">Highmarch Games is a one-person independent game studio. Nexus of Dragons is its first game.
     <a href="{r}about/">More about the studio</a>.</p>
   </div>
 </section>""", active="Press")
