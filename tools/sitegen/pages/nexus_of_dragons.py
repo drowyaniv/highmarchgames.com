@@ -7,8 +7,8 @@ PAGE = Page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
     "Nexus of Dragons is a fantasy adventure board game for one to six players, in development for PC by Highmarch Games.",
     """<div class="game-hero">
   <picture>
-    <source media="(max-width: 900px)" srcset="{r}assets/img/nexus/keyart-night-960.webp">
-    <img src="{r}assets/img/nexus/keyart-night-1920.webp" alt="" width="1920" height="1072">
+    <source media="(max-width: 900px)" srcset="{r}assets/img/nexus/keyart-night-960.webp 960w, {r}assets/img/nexus/keyart-night-1920.webp 1920w" sizes="100vw">
+    <img src="{r}assets/img/nexus/keyart-night-1920.webp" srcset="{r}assets/img/nexus/keyart-night-1920.webp 1920w, {r}assets/img/nexus/keyart-night-2560.webp 2560w, {r}assets/img/nexus/keyart-night-3840.webp 3840w, {r}assets/img/nexus/keyart-night-5120.webp 5120w" sizes="100vw" alt="" width="1920" height="1072">
   </picture>
   <div class="wrap">
     <h1 class="skip">Nexus of Dragons</h1>
@@ -50,7 +50,7 @@ PAGE = Page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
   </div>
 </section>
 <section class="story">
-  <img class="bg" src="{r}assets/img/nexus/keyart-960.webp" alt="" width="960" height="536" loading="lazy">
+  <img class="bg" src="{r}assets/img/nexus/keyart-960.webp" srcset="{r}assets/img/nexus/keyart-960.webp 960w, {r}assets/img/nexus/keyart-1920.webp 1920w" sizes="(min-width: 2400px) 2400px, 100vw" alt="" width="960" height="536" loading="lazy">
   <div class="wrap">
     <p class="eyebrow">The Waking of the Nexus</p>
     <h2>Now the dead march again</h2>
