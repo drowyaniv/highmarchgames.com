@@ -24,14 +24,14 @@ PAGE = Page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
       <p class="eyebrow">The game</p>
       <h2>A board game you can lose yourself in</h2>
       <hr class="rule">
-      <p>Nexus of Dragons is played on a painted board of three rings. Each turn you roll, choose your road and face
-      what you find there: a monster to fight, a stranger with an offer, a town to rest in, a gate that will only open
-      for the strong.</p>
+      <p>Nexus of Dragons is played on a board of three rings, across the land of Thandrys. Each turn you roll, choose
+      your road and face what you find there: a monster to fight, a stranger with an offer, a town to rest in, a gate
+      that will only open for the strong.</p>
       <p>Your hero grows with every step – levels, spells, gear, a horse, a few loyal companions. The other heroes on the
       board are racing you to the same prize. Only one of you will take mastery of the Nexus Crystal.</p>
     </div>
     <div class="card"><img src="{r}assets/img/nexus/shots/table-800.webp" alt="The board of Nexus of Dragons on the table, seen from above" width="800" height="450" loading="lazy">
-      <div class="body"><p class="mt0 muted" style="margin:0">To win, reach the Nexus Temple, defeat the Shadow Dragon and take mastery of the Crystal.</p></div></div>
+      <div class="body"><p class="mt0 muted" style="margin:0">To win, reach the Nexus Temple, defeat the dragon that guards it and take mastery of the Crystal.</p></div></div>
   </div>
 </section>
 <section class="band">
@@ -53,17 +53,19 @@ PAGE = Page("games/nexus-of-dragons/index.html", "Nexus of Dragons",
   <img class="bg" src="{r}assets/img/nexus/keyart-960.webp" alt="" width="960" height="536" loading="lazy">
   <div class="wrap">
     <p class="eyebrow">The Waking of the Nexus</p>
-    <h2>This spring, the Crystal flared</h2>
-    <blockquote>Beasts no one had seen in a lifetime came down onto the roads. The dead began to march in step.
-    And at the heart of the Nexus, coiled around the Crystal, the Shadow Dragon woke.</blockquote>
+    <h2>Now the dead march again</h2>
+    <blockquote>For eight hundred years the Crystal has burned half-open, corrupted by the souls the lich Vael Morrath
+    poured into it. Every few decades it flares: the monsters come, the dead walk, and its guardian rises to burn the
+    land. Now the dead march again, and someone is leading them. Whoever finishes the ritual will hold the Nexus.</blockquote>
   </div>
 </section>
 <section>
   <div class="wrap">
     <p class="eyebrow">Heroes</p>
-    <h2>Ninety heroes, ninety stories</h2>
-    <p class="lede">A gate captain searching for the man who raised him. A glassblower's daughter who taught herself fire.
-    A hunter tracking a corrupted dragon through the marshes. Every hero comes with a story and a quest of their own.</p>
+    <h2>Dozens of heroes, each with a story</h2>
+    <p class="lede">A gate captain searching for the man who raised him. A library guard who has kept her lady's last
+    order for eight hundred years. A hunter tracking a corrupted dragon through the marshes. Choose one of them – or
+    make your own.</p>
     <div class="heroes">""" + HEROES_HTML + """</div>
   </div>
 </section>

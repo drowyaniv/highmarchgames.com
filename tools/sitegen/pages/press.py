@@ -37,11 +37,11 @@ PAGE = Page("press/index.html", "Press kit",
       <h2>Description</h2>
       <p><b>Short:</b> """ + GAME_SHORT + """</p>
       <p><b>Long:</b> Nexus of Dragons is a fantasy adventure board game for one to six players, in development for PC.
-      Players choose from ninety heroes – nine peoples, five classes, each with a story and a personal quest – and journey
-      inward across three rings of a painted land. Along the way they fight monsters with dice on the table, rest and
-      trade in towns, buy mounts, hire companions and take on contracts, while four lieutenants of the Shadow Dragon roam
-      the board. The first hero to reach the Nexus Temple, defeat the Shadow Dragon and take mastery of the Nexus Crystal
-      wins. Matches come in two lengths: Classic and Quick.</p>
+      Players choose from a wide cast of heroes, each with a story and a personal quest, and journey inward across the
+      three rings of Thandrys. Along the way they fight monsters with dice on the table, rest and trade in towns, buy
+      mounts, hire companions and take on contracts, while the lich's four lieutenants roam the board. The first hero to
+      reach the Nexus Temple, defeat the dragon that guards it and take mastery of the Nexus Crystal wins. Matches come
+      in two lengths: Classic and Quick.</p>
     </div>
   </div>
 </section>
