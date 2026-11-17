@@ -2,6 +2,7 @@
 import html
 
 from .config import EMAIL, NAV, SITE, YEAR
+from .widgets import MAIL_COPY_JS
 
 OG_IMAGE = "assets/img/nexus/og-nexus.jpg"  # link-preview image for every page
 
@@ -56,6 +57,7 @@ def render_page(path, title, description, body, active=None):
     <div>&copy; {YEAR} Highmarch Games. All rights reserved. Highmarch&trade; and the Highmarch logo are trademarks of Highmarch Games.</div>
   </div>
 </footer>
+{MAIL_COPY_JS}
 </body>
 </html>
 """

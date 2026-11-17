@@ -27,6 +27,7 @@ PAGE = Page("press/index.html", "Press kit",
         <tr><th>Players</th><td>1–6, local (one screen); any mix of people and computer heroes</td></tr>
         <tr><th>Platform</th><td>PC (Windows)</td></tr>
         <tr><th>Engine</th><td>Unreal Engine 5</td></tr>
+        <tr><th>AI use</th><td>Artwork, music, some sound effects and game text made with AI tools, directed and reviewed by the developer</td></tr>
         <tr><th>Release date</th><td>To be announced</td></tr>
         <tr><th>Price</th><td>To be announced</td></tr>
         <tr><th>Language</th><td>English</td></tr>

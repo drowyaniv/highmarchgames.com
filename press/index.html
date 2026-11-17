@@ -50,6 +50,7 @@
         <tr><th>Players</th><td>1–6, local (one screen); any mix of people and computer heroes</td></tr>
         <tr><th>Platform</th><td>PC (Windows)</td></tr>
         <tr><th>Engine</th><td>Unreal Engine 5</td></tr>
+        <tr><th>AI use</th><td>Artwork, music, some sound effects and game text made with AI tools, directed and reviewed by the developer</td></tr>
         <tr><th>Release date</th><td>To be announced</td></tr>
         <tr><th>Price</th><td>To be announced</td></tr>
         <tr><th>Language</th><td>English</td></tr>
@@ -123,5 +124,22 @@
     <div>&copy; 2026 Highmarch Games. All rights reserved. Highmarch&trade; and the Highmarch logo are trademarks of Highmarch Games.</div>
   </div>
 </footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(() => {
+  const toast = document.getElementById('toast');
+  let timer;
+  document.querySelectorAll('a[href^="mailto:"]').forEach(a => a.addEventListener('click', () => {
+    const address = a.getAttribute('href').slice(7).split('?')[0];
+    if (!navigator.clipboard) return;
+    navigator.clipboard.writeText(address).then(() => {
+      toast.textContent = 'Email address copied: ' + address;
+      toast.classList.add('show');
+      clearTimeout(timer);
+      timer = setTimeout(() => toast.classList.remove('show'), 4000);
+    }, () => {});
+  }));
+})();
+</script>
 </body>
 </html>
